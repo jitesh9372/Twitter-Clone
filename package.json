@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./node_modules/tailwindcss/lib/cli.js -i ./css/input.css -o ./css/output.css --minify && vite build",
+    "build": "node ./node_modules/tailwindcss/lib/cli.js -i ./css/input.css -o ./css/output.css --minify && node ./node_modules/vite/bin/vite.js build",
     "dev": "vite",
     "postinstall": "node -e \"try{require('fs').chmodSync('./node_modules/.bin/tailwindcss',0o755);}catch(e){}\""
   },
